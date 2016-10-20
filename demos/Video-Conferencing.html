@@ -1,94 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://cdn.webrtc-experiment.com/style.css">
+    <title>kHIDKI</title>
 
-    <title>Video Conferencing using RTCMultiConnection</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style2.css">
 
-    <meta name="description" content="Many-to-Many Video Conferencing using RTCMultiConnection" />
-    <meta name="keywords" content="WebRTC,RTCMultiConnection,Demos,Experiments,Samples,Examples" />
 
-    <style>
-        * {
-            word-wrap:break-word;
-        }
-        video {
-            object-fit: fill;
-            width: 30%;
-        }
-        button,
-        input,
-        select {
-            font-weight: normal;
-            padding: 2px 4px;
-            text-decoration: none;
-            display: inline-block;
-            text-shadow: none;
-            font-size: 16px;
-            outline: none;
-        }
+    <script src="js/modernizr.custom.js"></script>
 
-        .make-center {
-            text-align: center;
-            padding: 5px 10px;
-        }
-
-        img, input, textarea {
-          max-width: 100%
-        }
-
-        @media all and (max-width: 500px) {
-            .fork-left, .fork-right, .github-stargazers {
-                display: none;
-            }
-        }
-    </style>
 </head>
 
 <body>
+
+    <a href="#header" id="back-to-top" class="top"><i class="fa fa-chevron-up"></i></a>
+    <!-- HHHHHHHHHHHHHHHHHH        Preloader          HHHHHHHHHHHHHHHH -->
+    <!-- <div id="preloader"></div> -->
+    <!-- HHHHHHHHHHHHHHHHHH        Header          HHHHHHHHHHHHHHHH -->
+    <section id="header" class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="navigation" id="navigation-scroll">
+                        <div class="row">
+                            <div class="col-md-11 col-xs-10">
+                                <a href="Video-Conferencing.html"><span id="logo"><strong class="strong">K</strong>hidki</span></a>
+                            </div>
+                            <div class="col-md-1 col-xs-2">
+                               
+                            </div>
+                        </div><!-- /.row -->
+                    </div><!-- /.navigation -->
+                </div><!--/.container-->
+            </div><!--/.top-bar-->
+
+        <div class="container">
+            <div class="starting">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://www.lifesize.com/~/media/Images/Home%20Page/Device%20Collage_Employee.ashx?h=409&la=en&mh=409&mw=817&w=817" alt="LUCY" class="wow flipInY animated animated">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="banner-text">
+                             <h2 class="animation-box wow bounceIn animated"><strong class="strong">One click for</strong><br>
+                            all needs</h2>
+                            <p>
+                                 Touch the world across seas...
+                            </p>
+                            <a href="#speciality" class="btn btn-sub">
+                            <i ></i>
+                            <strong> Try it Now >>></strong>
+                          
+                            </a>
+                            
+                        </div> <!-- /.banner-text -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.starting -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#header -->
+
+   
+
+   
+    <!-- HHHHHHHHHHHHHHHHHH        Speciality         HHHHHHHHHHHHHHHH -->
+    <div id="speciality" class="wrapper">
+        <div class="container">
+            <h2 class="animation-box wow bounceIn animated">Welcome</h2>
+                  <!-- HHHHHHHHHHHHHHHHHH        Video          HHHHHHHHHHHHHHHH -->
     <article>
 
-        <header style="text-align: center;">
-            <h1>Video Conferencing using RTCMultiConnection</h1>
-            <p>
-                <a href="https://rtcmulticonnection.herokuapp.com/">HOME</a>
-                <span> &copy; </span>
-                <a href="http://www.MuazKhan.com/" target="_blank">Muaz Khan</a> .
-                <a href="http://twitter.com/WebRTCWeb" target="_blank" title="Twitter profile for WebRTC Experiments">@WebRTCWeb</a> .
-                <a href="https://github.com/muaz-khan?tab=repositories" target="_blank" title="Github Profile">Github</a> .
-                <a href="https://github.com/muaz-khan/RTCMultiConnection/issues?state=open" target="_blank">Latest issues</a> .
-                <a href="https://github.com/muaz-khan/RTCMultiConnection/commits/master" target="_blank">What's New?</a>
-            </p>
-        </header>
+       
 
-        <div class="github-stargazers"></div>
 
-        <blockquote>
-            Mesh networking model is used to implement many-to-many video connection.<br>
-            All users can watch each other; all of them can speak as well.
-        </blockquote>
-
-        <section class="experiment">
+        
+        
             <div class="make-center">
-                <input type="text" id="room-id" value="abcdef" autocorrect=off autocapitalize=off size=20>
-                <button id="open-room">Open Room</button>
-                <button id="join-room">Join Room</button>
-                <button id="open-or-join-room">Auto Open Or Join Room</button>
+                <div type="text" id="room-id" value="abcdef" autocorrect=off autocapitalize=off size=20>
+                <button  id="open-room" class="btn btn-sub" >Open Room</button>
+                <button id="join-room" class="btn btn-sub">Join Room</button>
+                <div id="open-or-join-room"></div>
 
                 <div id="room-urls" style="text-align: center;display: none;background: #F1EDED;margin: 15px -10px;border: 1px solid rgb(189, 189, 189);border-left: 0;border-right: 0;"></div>
             </div>
 
             <div id="videos-container"></div>
-        </section>
 
-        <!-- <script src="/dist/rmc3.min.js"></script> -->
+       
+            <p>
+                Khidki Live!
+            </p>
+    </div> <!-- /#video -->
+
+    
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /#speciality -->
+
+
+   
+    <!-- HHHHHHHHHHHHHHHHHH        Footer          HHHHHHHHHHHHHHHH -->
+
+    <section id="footer" class="wrapper">
+        <div class="container text-center">
+            <div class="footer-logo">
+                <h1 class="text-center animation-box wow bounceIn animated">Khidki</h1>
+            </div>
+            <ul class="social-icons text-center">
+       
+            </ul>
+
+            <div class="copyright">
+                <div class="credits">
+                    Made With <i class="fa fa-heart"></i> by WanClouds
+                </div>
+                <div>©All Rights Reserved</div>
+            </div>
+        </div><!-- container -->
+    </section>
+
+
+
+
+    
+    
+
+
+    <!-- HHHHHHHHHHHHHHHHHH        Open/Close          HHHHHHHHHHHHHHHH -->
+  
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <!--<script src="js/jquery.ajaxchimp.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".hideit").click(function(){
+                $(".overlay").hide();
+            });
+            $("#trigger-overlay").click(function(){
+                $(".overlay").show();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+
+          var kawa = $('.top-bar');
+          var back = $('#back-to-top');
+          function scroll() {
+             if ($(window).scrollTop() > 700) {
+                kawa.addClass('fixed');
+                back.addClass('show-top');
+
+             } else {
+                kawa.removeClass('fixed');
+                back.removeClass('show-top');
+             }
+          }
+
+          document.onscroll = scroll;
+        });
+    </script>
+    <!--HHHHHHHHHHHH        Smooth Scrooling     HHHHHHHHHHHHHHHH-->
+  <!-- <script src="/dist/rmc3.min.js"></script> -->
         <script src="https://cdn.webrtc-experiment.com:443/rmc3.min.js"></script>
 
         <!-- custom layout for HTML5 audio/video elements -->
@@ -188,11 +284,11 @@
                 var roomHashURL = '#' + roomid;
                 var roomQueryStringURL = '?roomid=' + roomid;
 
-                var html = '<h2>Unique URL for your room:</h2><br>';
+                var html = '';
 
-                html += 'Hash URL: <a href="' + roomHashURL + '" target="_blank">' + roomHashURL + '</a>';
+               // html += 'Hash URL: <a href="' + roomHashURL + '" target="_blank">' + roomHashURL + '</a>';
                 html += '<br>';
-                html += 'QueryString URL: <a href="' + roomQueryStringURL + '" target="_blank">' + roomQueryStringURL + '</a>';
+                html += 'Session Link: <a href="' + roomQueryStringURL + '" target="_blank">' + roomQueryStringURL + '</a>';
 
                 var roomURLsDiv = document.getElementById('room-urls');
                 roomURLsDiv.innerHTML = html;
@@ -254,41 +350,10 @@
             }
         </script>
 
-        <section class="experiment own-widgets latest-commits">
-            <h2 class="header" id="updates" style="color: red;padding-bottom: .1em;"><a href="https://github.com/muaz-khan/RTCMultiConnection/commits/master">Latest Updates</a></h2>
-            <div id="github-commits"></div>
-        </section>
 
-        <section class="experiment own-widgets">
-            <h2 class="header" id="updates" style="color: red;padding-bottom: .1em;"><a href="https://github.com/muaz-khan/RTCMultiConnection/issues">Latest Issues</a></h2>
-            <div id="github-issues"></div>
-        </section>
 
-        <section class="experiment">
-            <h2 class="header" id="feedback">Feedback</h2>
-            <div>
-                <textarea id="message" style="height: 8em; margin: .2em; width: 98%; border: 1px solid rgb(189, 189, 189); outline: none; resize: vertical;" placeholder="Have any message? Suggestions or something went wrong?"></textarea>
-            </div>
-            <button id="send-message" style="font-size: 1em;">Send Message</button><small style="margin-left:1em;">Enter your email too; if you want "direct" reply!</small>
-        </section>
 
-        <a href="https://github.com/muaz-khan/RTCMultiConnection" class="fork-left"></a>
 
-        <script>
-            window.useThisGithubPath = 'muaz-khan/RTCMultiConnection';
-        </script>
-        <script src="https://cdn.webrtc-experiment.com/commits.js" async></script>
-
-    </article>
-
-    <footer>
-        <p>
-            <a href="https://www.webrtc-experiment.com">WebRTC Experiments</a> © <a href="https://plus.google.com/+MuazKhan" rel="author" target="_blank">Muaz Khan</a>
-            <a href="mailto:muazkh@gmail.com" target="_blank">muazkh@gmail.com</a>
-            <a href="https://github.com/muaz-khan" target="_blank">Github</a>
-        </p>
-    </footer>
-
+    
 </body>
-
 </html>
